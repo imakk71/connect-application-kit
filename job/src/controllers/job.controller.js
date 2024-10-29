@@ -1,4 +1,4 @@
-import { allCustomers } from '../customers/fetch.customers.js'; // Import your customer fetching function
+import { allCustomers } from '../client/fetch.customers.js'; // Import your customer fetching function
 
 export const post = async (_request, response) => {
   try {
