@@ -1,6 +1,14 @@
-name: "Website Speedy"
-entryPointUriPath: website-speedy-optimization" # unique path for your app
-scopes: 
-  - view_customers
-redirectUris:
-  - "https://app.websitespeedy.com" # redirect URL for after installation
+deployAs:
+  - name: Website Speedy
+    applicationType: merchant-center-custom-application
+    configuration:
+      standardConfiguration:
+        - key: cm2ry5jvs0003kpl9n1p3s0sd
+          description: the Custom Application ID
+          required: true
+        - key: CLOUD_IDENTIFIER
+          description: The cloud identifier
+          default: 'gcp-eu'
+        - key: website-speedy-optimization
+          description: The Application entry point URI path
+          required: true
